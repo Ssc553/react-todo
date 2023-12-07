@@ -18,13 +18,13 @@ export default function SingleToDo(props) {
         }
         axios.put(`http://todoapi.scottcousino.net/api/ToDos/${props.todo.todoId}`, updatedToDo).then(response => {
             console.log(response)
-            props.getToDos()
+            props.getToDo()
         })
     }
 
     const deleteToDo = (id) => {
         if(window.confirm(`Are you sure you want to delete ${props.todo.name}?`)) {
-            axios.delete(`http://todoapi.spencerwpearson.com/api/ToDos/${id}`).then(() => {props.getToDos()})
+            axios.delete(`http://todoapi.scottcousino.net/api/ToDos/${id}`).then(() => {props.getToDo()})
         }
     }
 

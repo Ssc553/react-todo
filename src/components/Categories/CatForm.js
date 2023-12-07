@@ -9,7 +9,7 @@ export default function CatForm(props) {
         if (!props.category) {
             const catToCreate = values
 
-            axios.post(`http://todoapi.spencerwpearson.com/api/Categories`, catToCreate).then(() => {
+            axios.post(`http://todoapi.scottcousino.net/api/Categories`, catToCreate).then(() => {
                 props.setShowCreate(false)
                 props.getCategories()
             })
@@ -21,7 +21,7 @@ export default function CatForm(props) {
                 catDesc: values.catDesc
             }
 
-            axios.put(`http://todoapi.scottcousino.net/api/Categories/${prop.category.categoryId}`, catToEdit).then(() => {
+            axios.put(`http://todoapi.scottcousino.net/api/Categories/${props.category.categoryId}`, catToEdit).then(() => {
                 props.setShowEdit(false)
                 props.getCategories()
             })

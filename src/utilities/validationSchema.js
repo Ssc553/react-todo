@@ -8,9 +8,9 @@ const catSchema = Yup.object().shape({
 })
 
 const todoSchema = Yup.object().shape({
-    todoId: Yup.number().required(),
+    
     name: Yup.string().max(100, 'Max 100 Characters').required('Required'),
-    done: Yup.bool().required('Required'),    
+        
     categoryId: Yup.number().required()
 })
 

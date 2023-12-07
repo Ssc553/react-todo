@@ -12,7 +12,7 @@ export default function ToDoEdit(props) {
                 <h3>Editing {props.todo.name}</h3>
             </Modal.Header>
             <Modal.Body>
-                <ToDoForm getToDos={props.getToDo} setShowEdit={props.setShowEdit} todo={props.todo} />
+                <ToDoForm getToDo={props.getToDo} setShowEdit={props.setShowEdit} todo={props.todo} />
             </Modal.Body>
     </Modal>
   )
