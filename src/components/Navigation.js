@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 export default function Navigation() {
   return (
-    <Navbar bg='dark' data-bs-theme='dark' className='p-3' expand='md'>
+    <Navbar bg='info' data-bs-theme='info' className='p-3' expand='md'>
         <Navbar.Brand href='/'>ToDo App</Navbar.Brand>
             <Navbar.Toggle/>
             <Navbar.Collapse className='justify-content-end'>
